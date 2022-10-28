@@ -1,0 +1,87 @@
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: grey;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.calculator {
+  width: 400px;
+}
+
+.calculator .display {
+  min-height: 150px;
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-radius: 10px 10px 0 0;
+  overflow-x: scroll;
+}
+
+.calculator .display h1 {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 25px;
+  margin-right: 15px;
+}
+
+.calculator button {
+  border: none;
+  background-color: #bbb9b9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.calculator button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.calculator .btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50px;
+  gap: 5px;
+}
+
+.calculator .btn .operators {
+  background-color: #424242;
+  font-size: 20px;
+  color: white;
+}
+
+.calculator .btn .equalto {
+  grid-column: -2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+}
+
+.calculator .btn .clear-btn {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
